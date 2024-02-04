@@ -4,6 +4,7 @@
 
 Reproduce the Detail screen below in Flutter.
 
+<img width="415" alt="FoodRecipe" src="https://github.com/wptechprodigy/foodrecipe/assets/22558674/95413dfb-6554-4e38-9c3f-2b8e53f80f64">
 
 
 ### How to complete the task
