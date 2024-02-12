@@ -15,17 +15,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Food Recipe',
-      home: MyHomePage(title: ''),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
+  const MyHomePage({
+    super.key,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -49,15 +50,18 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 17,
               ),
-              VideoSection(bgImage: "assets/images/image_13.png"),
+              VideoSection(bgImage: "assets/images/image.png"),
               const SizedBox(
                 height: 14,
               ),
-             Rating(rating: 4.5),
+              Rating(rating: 4.5),
               const SizedBox(
                 height: 12,
               ),
-              User(image: "assets/images/unsplash.png", name: "Roberta Anny", location: "Bali, Indonesia"),
+              User(
+                  image: "assets/images/unsplash.png",
+                  name: "Roberta Anny",
+                  location: "Bali, Indonesia"),
               const SizedBox(
                 height: 20,
               ),

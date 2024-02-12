@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class Rating extends StatelessWidget {
   num rating;
 
-   Rating({super.key, required this.rating});
+  Rating({super.key, required this.rating});
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Icon(
@@ -15,19 +15,19 @@ class Rating extends StatelessWidget {
           color: Colors.orange.shade400,
           size: 19,
         ),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Text(
           "$rating",
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 8,
         ),
-        Text(
+        const Text(
           "(300 Reviews)",
           style: TextStyle(
             fontWeight: FontWeight.w500,
@@ -35,7 +35,7 @@ class Rating extends StatelessWidget {
             fontSize: 14,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 8,
         ),
       ],

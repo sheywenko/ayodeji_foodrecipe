@@ -28,16 +28,18 @@ class IngredientSection extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        Ingredient(image: "assets/images/coffee.png", name: "Milk", weight: "200"),
+        Ingredient(
+            image: "assets/images/noodles.png", name: "Bread", weight: "200"),
         const SizedBox(
           height: 15,
         ),
-        Ingredient(image: "assets/images/burger.png", name: "Bread", weight: "200"),
+        Ingredient(
+            image: "assets/images/coffee.png", name: "Eggs", weight: "200"),
         const SizedBox(
           height: 15,
         ),
-        Ingredient(image: "assets/images/coffee.png", name: "Eggs", weight: "200"),
-
+        Ingredient(
+            image: "assets/images/noodles.png", name: "Milk", weight: "200"),
       ],
     );
   }

@@ -5,21 +5,23 @@ class User extends StatelessWidget {
   String name;
   String location;
 
-  User({super.key, required  this.image, required  this.name, required  this.location });
+  User(
+      {super.key,
+      required this.image,
+      required this.name,
+      required this.location});
 
   @override
   Widget build(BuildContext context) {
-    return   Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(children: [
-          Container(
-            child: Image.asset(
-              image,
-              fit: BoxFit.cover,
-            ),
+          Image.asset(
+            image,
+            fit: BoxFit.cover,
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Column(
@@ -27,20 +29,20 @@ class User extends StatelessWidget {
             children: [
               Text(
                 name,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 17),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
               ),
               Row(
                 children: [
                   Image.asset(
                     "assets/images/Location.png",
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Text(
                     location,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w500,
                       color: Colors.grey,
                       fontSize: 14,
@@ -53,16 +55,15 @@ class User extends StatelessWidget {
         ]),
         ElevatedButton(
           onPressed: () {},
-          child: Text('Follow'),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
             foregroundColor: Colors.white,
-            padding:
-            EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12), // <-- Radius
             ),
           ),
+          child: const Text('Follow'),
         ),
       ],
     );
